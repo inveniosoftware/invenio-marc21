@@ -39,4 +39,5 @@ recursive-include docs Makefile
 recursive-include examples *.py
 recursive-include invenio_marc21 *.html
 recursive-include invenio_marc21 *.po *.pot *.mo
+recursive-include invenio_marc21 *.json
 recursive-include tests *.py

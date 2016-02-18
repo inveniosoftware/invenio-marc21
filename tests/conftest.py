@@ -27,8 +27,18 @@
 
 from __future__ import absolute_import, print_function
 
+import os
+from time import sleep
+
 import pytest
 from flask import Flask
+from flask_babelex import Babel
+from flask_cli import FlaskCLI
+from invenio_db import InvenioDB, db
+from invenio_records import InvenioRecords
+from invenio_search.proxies import current_search
+
+from invenio_marc21 import InvenioMARC21
 
 
 @pytest.fixture()
@@ -38,4 +48,33 @@ def app():
     app.config.update(
         TESTING=True
     )
+    return app
+
+
+@pytest.fixture()
+def es_app(request):
+    """Flask application with records fixture."""
+    app = Flask(__name__)
+    app.config.update(
+        SQLALCHEMY_DATABASE_URI=os.environ.get(
+            'SQLALCHEMY_DATABASE_URI', 'sqlite:///test.db'),
+    )
+
+    Babel(app)
+    FlaskCLI(app)
+    InvenioDB(app)
+    InvenioRecords(app)
+    InvenioMARC21(app)
+
+    sleep(10)
+
+    with app.app_context():
+        db.create_all()
+
+    def teardown():
+        with app.app_context():
+            db.drop_all()
+
+    request.addfinalizer(teardown)
+
     return app

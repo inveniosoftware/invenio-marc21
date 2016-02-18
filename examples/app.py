@@ -37,10 +37,20 @@ from __future__ import absolute_import, print_function
 
 from flask import Flask
 from flask_babelex import Babel
+from flask_cli import FlaskCLI
+from invenio_search import InvenioSearch
 
 from invenio_marc21 import InvenioMARC21
 
 # Create Flask application
 app = Flask(__name__)
+app.config.update(
+    ELASTICSEARCH_HOST="localhost:9200",
+    SEARCH_ELASTIC_HOSTS="localhost:9200",
+    SEARCH_ELASTIC_KEYWORD_MAPPING={None: ['_all']},
+)
+
 Babel(app)
+FlaskCLI(app)
+InvenioSearch(app)
 InvenioMARC21(app)

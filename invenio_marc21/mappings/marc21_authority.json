@@ -1,0 +1,4610 @@
+{
+  "mappings": {
+    "marc21_authority": {
+      "properties": {
+        "see_from_tracing_geographic_subdivision": {
+          "properties": {
+            "control_subfield": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "series_numbering_peculiarities": {
+          "properties": {
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "source_of_information": {
+              "type": "string"
+            },
+            "numbering_peculiarities_note": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "content_type": {
+          "properties": {
+            "materials_specified": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "content_type_code": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "content_type_term": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "subject_example_tracing_note": {
+          "properties": {
+            "explanatory_text": {
+              "type": "string"
+            },
+            "subject_heading_or_subdivision_term": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "heading_form_subdivision": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "control_number": {
+          "type": "string"
+        },
+        "coded_cartographic_mathematical_data": {
+          "properties": {
+            "materials_specified": {
+              "type": "string"
+            },
+            "coordinates_northernmost_latitude": {
+              "type": "string"
+            },
+            "distance_from_earth": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "coordinates_easternmost_longitude": {
+              "type": "string"
+            },
+            "beginning_date": {
+              "type": "string"
+            },
+            "right_ascension_western_limit": {
+              "type": "string"
+            },
+            "right_ascension_eastern_limit": {
+              "type": "string"
+            },
+            "ending_date": {
+              "type": "string"
+            },
+            "declination_southern_limit": {
+              "type": "string"
+            },
+            "declination_northern_limit": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "coordinates_southernmost_latitude": {
+              "type": "string"
+            },
+            "name_of_extraterrestrial_body": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "type_of_ring": {
+              "type": "string"
+            },
+            "coordinates_westernmost_longitude": {
+              "type": "string"
+            },
+            "equinox": {
+              "type": "string"
+            },
+            "g_ring_latitude": {
+              "type": "string"
+            },
+            "g_ring_longitude": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "complex_see_also_reference_name": {
+          "properties": {
+            "explanatory_text": {
+              "type": "string"
+            },
+            "heading_referred_to": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "title_referred_to": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "heading_corporate_name": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "type_of_corporate_name_entry_element": {
+              "type": "string"
+            },
+            "relator_term": {
+              "type": "string"
+            },
+            "location_of_meeting": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "key_for_music": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "number_of_part_section_meeting": {
+              "type": "string"
+            },
+            "date_of_meeting_or_treaty_signing": {
+              "type": "string"
+            },
+            "subordinate_unit": {
+              "type": "string"
+            },
+            "arranged_statement_for_music": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "medium_of_performance_for_music": {
+              "type": "string"
+            },
+            "corporate_name_or_jurisdiction_name_as_entry_element": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "nonpublic_general_note": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "nonpublic_general_note": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "associated_language": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "source_of_code": {
+              "type": "string"
+            },
+            "language_code": {
+              "type": "string"
+            },
+            "language_term": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "subdivision_linking_entry_chronological_subdivision": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_also_from_tracing_geographic_subdivision": {
+          "properties": {
+            "control_subfield": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "established_heading_linking_entry_corporate_name": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "type_of_corporate_name_entry_element": {
+              "type": "string"
+            },
+            "relator_term": {
+              "type": "string"
+            },
+            "location_of_meeting": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "date_of_meeting_or_treaty_signing": {
+              "type": "string"
+            },
+            "number_of_part_section_meeting": {
+              "type": "string"
+            },
+            "subordinate_unit": {
+              "type": "string"
+            },
+            "arranged_statement_for_music": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "key_for_music": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "corporate_name_or_jurisdiction_name_as_entry_element": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "medium_of_performance_for_music": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "subdivision_linking_entry_general_subdivision": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "associated_group": {
+          "properties": {
+            "associated_group": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_information": {
+              "type": "string"
+            },
+            "source_of_term": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "end_period": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "start_period": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "other_classification_number": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "explanatory_term": {
+              "type": "string"
+            },
+            "classification_number_element_ending_number_of_span": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "number_source": {
+              "type": "string"
+            },
+            "classification_number_element_single_number_or_beginning_of_span": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_also_from_tracing_uniform_title": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "nonfiling_characters": {
+              "type": "string"
+            },
+            "number_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "key_for_music": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "arranged_statement_for_music": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "uniform_title": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "date_of_treaty_signing": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "medium_of_performance_for_music": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "control_number_identifier": {
+          "type": "string"
+        },
+        "see_also_from_tracing_general_subdivision": {
+          "properties": {
+            "control_subfield": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "series_analysis_practice": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "series_analysis_practice": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "volumes_dates_to_which_analysis_practice_applies": {
+              "type": "string"
+            },
+            "exceptions_to_analysis_practice": {
+              "type": "string"
+            },
+            "institution_copy_to_which_field_applies": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_from_tracing_geographic_name": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "geographic_name": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "established_heading_linking_entry_chronological_term": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "chronological_term": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "international_standard_serial_number": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "issn_l": {
+              "type": "string"
+            },
+            "canceled_issn_l": {
+              "type": "string"
+            },
+            "canceled_issn": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "incorrect_issn": {
+              "type": "string"
+            },
+            "international_standard_serial_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "subject_category_code": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "code_source": {
+              "type": "string"
+            },
+            "subject_category_code_subdivision": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "subject_category_code": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "universal_decimal_classification_number": {
+          "properties": {
+            "common_auxiliary_subdivision": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "universal_decimal_classification_number": {
+              "type": "string"
+            },
+            "edition_identifier": {
+              "type": "string"
+            },
+            "item_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "heading_genre_form_term": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "genre_form_term": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "heading_personal_name": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "attribution_qualifier": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "dates_associated_with_a_name": {
+              "type": "string"
+            },
+            "relator_term": {
+              "type": "string"
+            },
+            "number_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "fuller_form_of_name": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "key_for_music": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "numeration": {
+              "type": "string"
+            },
+            "arranged_statement_for_music": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "type_of_personal_name_entry_element": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "medium_of_performance_for_music": {
+              "type": "string"
+            },
+            "personal_name": {
+              "type": "string"
+            },
+            "titles_and_other_words_associated_with_a_name": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "key": {
+          "properties": {
+            "key": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "special_coded_dates": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "ending_date_for_aggregated_content": {
+              "type": "string"
+            },
+            "end_period": {
+              "type": "string"
+            },
+            "source_of_date_scheme": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "termination_date": {
+              "type": "string"
+            },
+            "start_period": {
+              "type": "string"
+            },
+            "birth_date": {
+              "type": "string"
+            },
+            "single_or_starting_date_for_aggregated_content": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "death_date": {
+              "type": "string"
+            },
+            "ending_date_created": {
+              "type": "string"
+            },
+            "source_of_information": {
+              "type": "string"
+            },
+            "establishment_date": {
+              "type": "string"
+            },
+            "beginning_or_single_date_created": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "time_period_of_heading": {
+          "properties": {
+            "time_period_code": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "formatted_pre_9999_bc_time_period": {
+              "type": "string"
+            },
+            "formatted_9999_bc_through_ce_time_period": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "established_heading_linking_entry_genre_form_term": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "genre_form_term_as_entry_element": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_from_tracing_chronological_subdivision": {
+          "properties": {
+            "control_subfield": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_also_from_tracing_meeting_name": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "type_of_meeting_name_entry_element": {
+              "type": "string"
+            },
+            "relator_term": {
+              "type": "string"
+            },
+            "location_of_meeting": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "meeting_name_or_jurisdiction_name_as_entry_element": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "name_of_meeting_following_jurisdiction_name_entry_element": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "number_of_part_section_meeting": {
+              "type": "string"
+            },
+            "date_of_meeting": {
+              "type": "string"
+            },
+            "subordinate_unit": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "heading_general_subdivision": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "family_information": {
+          "properties": {
+            "name_of_prominent_member": {
+              "type": "string"
+            },
+            "hereditary_title": {
+              "type": "string"
+            },
+            "source_of_information": {
+              "type": "string"
+            },
+            "type_of_family": {
+              "type": "string"
+            },
+            "source_of_term": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "end_period": {
+              "type": "string"
+            },
+            "start_period": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "library_of_congress_call_number": {
+          "properties": {
+            "item_number": {
+              "type": "string"
+            },
+            "volumes_dates_to_which_call_number_applies": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "classification_number": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "geographic_area_code": {
+          "properties": {
+            "source_of_local_code": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "iso_code": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "geographic_area_code": {
+              "type": "string"
+            },
+            "local_gac_code": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_from_tracing_uniform_title": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "nonfiling_characters": {
+              "type": "string"
+            },
+            "number_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "date_of_treaty_signing": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "uniform_title": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "arranged_statement_for_music": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "key_for_music": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "medium_of_performance_for_music": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "heading_geographic_name": {
+          "properties": {
+            "geographic_name": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_also_from_tracing_medium_of_performance_term": {
+          "properties": {
+            "control_subfield": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "medium_of_performance_term": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "history_reference": {
+          "properties": {
+            "history_reference": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "national_library_of_medicine_call_number": {
+          "properties": {
+            "item_number": {
+              "type": "string"
+            },
+            "volumes_dates_to_which_call_number_applies": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "classification_number": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "heading_medium_of_performance_term": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "medium_of_performance_term": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_from_tracing_chronological_term": {
+          "properties": {
+            "control_subfield": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "chronological_term": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_also_from_tracing_geographic_name": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "geographic_name": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "other_standard_identifier": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_number_or_code": {
+              "type": "string"
+            },
+            "qualifying_information": {
+              "type": "string"
+            },
+            "type_of_standard_number_or_code": {
+              "type": "string"
+            },
+            "additional_codes_following_the_standard_number_or_code": {
+              "type": "string"
+            },
+            "canceled_invalid_standard_number_or_code": {
+              "type": "string"
+            },
+            "standard_number_or_code": {
+              "type": "string"
+            },
+            "terms_of_availability": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "deleted_heading_information": {
+          "properties": {
+            "replacement_heading": {
+              "type": "string"
+            },
+            "explanatory_text": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "replacement_authority_record_control_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "date_and_time_of_latest_transaction": {
+          "type": "string"
+        },
+        "see_also_from_tracing_corporate_name": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "type_of_corporate_name_entry_element": {
+              "type": "string"
+            },
+            "relator_term": {
+              "type": "string"
+            },
+            "location_of_meeting": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "key_for_music": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "number_of_part_section_meeting": {
+              "type": "string"
+            },
+            "date_of_meeting_or_treaty_signing": {
+              "type": "string"
+            },
+            "subordinate_unit": {
+              "type": "string"
+            },
+            "arranged_statement_for_music": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "medium_of_performance_for_music": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "corporate_name_or_jurisdiction_name_as_entry_element": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "musical_incipits_information": {
+          "properties": {
+            "text_incipit": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "time_signature": {
+              "type": "string"
+            },
+            "link_text": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "number_of_movement": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "voice_instrument": {
+              "type": "string"
+            },
+            "musical_notation": {
+              "type": "string"
+            },
+            "general_note": {
+              "type": "string"
+            },
+            "public_note": {
+              "type": "string"
+            },
+            "key_signature": {
+              "type": "string"
+            },
+            "number_of_work": {
+              "type": "string"
+            },
+            "system_code": {
+              "type": "string"
+            },
+            "coded_validity_note": {
+              "type": "string"
+            },
+            "clef": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "number_of_excerpt": {
+              "type": "string"
+            },
+            "caption_or_heading": {
+              "type": "string"
+            },
+            "key_or_mode": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "other_distinguishing_characteristics_of_work_or_expression": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_information": {
+              "type": "string"
+            },
+            "other_distinguishing_characteristic": {
+              "type": "string"
+            },
+            "source_of_term": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "government_document_call_number": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "call_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "number_source": {
+              "type": "string"
+            },
+            "volumes_dates_to_which_call_number_applies": {
+              "type": "string"
+            },
+            "canceled_invalid_call_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "international_standard_book_number": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "terms_of_availability": {
+              "type": "string"
+            },
+            "qualifying_information": {
+              "type": "string"
+            },
+            "canceled_invalid_isbn": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "international_standard_book_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "heading_topical_term": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "topical_term_following_geographic_name_entry_element": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "topical_term_or_geographic_name_entry_element": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "system_control_number": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "canceled_invalid_system_control_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "system_control_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "description_conversion_information": {
+          "properties": {
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "conversion_agency": {
+              "type": "string"
+            },
+            "identifier_of_source_metadata": {
+              "type": "string"
+            },
+            "conversion_date": {
+              "type": "string"
+            },
+            "conversion_process": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "application_history_note": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "application_history_note": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "heading_uniform_title": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "arranged_statement_for_music": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "nonfiling_characters": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "number_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "medium_of_performance_for_music": {
+              "type": "string"
+            },
+            "key_for_music": {
+              "type": "string"
+            },
+            "date_of_treaty_signing": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "uniform_title": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "established_heading_linking_entry_geographic_name": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "geographic_name": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_also_from_tracing_form_subdivision": {
+          "properties": {
+            "control_subfield": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "subdivision_linking_entry_form_subdivision": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_from_tracing_general_subdivision": {
+          "properties": {
+            "control_subfield": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_also_from_tracing_chronological_subdivision": {
+          "properties": {
+            "control_subfield": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "complex_see_reference_subject": {
+          "properties": {
+            "explanatory_text": {
+              "type": "string"
+            },
+            "heading_referred_to": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "authority_record_control_number": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "lc_classification_number": {
+          "properties": {
+            "classification_number_element_single_number_or_beginning_number_of_span": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "explanatory_term": {
+              "type": "string"
+            },
+            "classification_number_element_ending_number_of_span": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "occupation": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_information": {
+              "type": "string"
+            },
+            "source_of_term": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "occupation": {
+              "type": "string"
+            },
+            "end_period": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "start_period": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_from_tracing_form_subdivision": {
+          "properties": {
+            "control_subfield": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "complex_see_reference_name": {
+          "properties": {
+            "explanatory_text": {
+              "type": "string"
+            },
+            "heading_referred_to": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "title_referred_to": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "national_bibliographic_agency_control_number": {
+          "properties": {
+            "record_control_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "canceled_or_invalid_record_control_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "subdivision_linking_entry_geographic_subdivision": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "numeric_designation_of_musical_work": {
+          "properties": {
+            "thematic_index_code": {
+              "type": "string"
+            },
+            "publisher_associated_with_opus_number": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "serial_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "opus_number": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "thematic_index_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_from_tracing_topical_term": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "topical_term_following_geographic_name_entry_element": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "topical_term_or_geographic_name_entry_element": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "fixed_length_data_elements": {
+          "type": "string"
+        },
+        "series_dates_of_publication_and_or_sequential_designation": {
+          "properties": {
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "dates_of_publication_and_or_sequential_designation": {
+              "type": "string"
+            },
+            "source_of_information": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "address": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "electronic_mail_address": {
+              "type": "string"
+            },
+            "end_period": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "intermediate_jurisdiction": {
+              "type": "string"
+            },
+            "start_period": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "public_note": {
+              "type": "string"
+            },
+            "source_of_information": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "relator_code": {
+              "type": "string"
+            },
+            "postal_code": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_also_from_tracing_chronological_term": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "chronological_term": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "other_attributes_of_person_or_corporate_body": {
+          "properties": {
+            "type_of_corporate_body": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "end_period": {
+              "type": "string"
+            },
+            "type_of_jurisdiction": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "other_designation": {
+              "type": "string"
+            },
+            "start_period": {
+              "type": "string"
+            },
+            "title_of_person": {
+              "type": "string"
+            },
+            "source_of_information": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_from_tracing_personal_name": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "attribution_qualifier": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "dates_associated_with_a_name": {
+              "type": "string"
+            },
+            "relator_term": {
+              "type": "string"
+            },
+            "number_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "fuller_form_of_name": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "key_for_music": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "numeration": {
+              "type": "string"
+            },
+            "arranged_statement_for_music": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "type_of_personal_name_element": {
+              "type": "string"
+            },
+            "personal_name": {
+              "type": "string"
+            },
+            "titles_and_other_words_associated_with_a_name": {
+              "type": "string"
+            },
+            "medium_of_performance_for_music": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "authentication_code": {
+          "properties": {
+            "authentication_code": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "geographic_classification": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "code_source": {
+              "type": "string"
+            },
+            "populated_place_name": {
+              "type": "string"
+            },
+            "geographic_classification_area_code": {
+              "type": "string"
+            },
+            "geographic_classification_subarea_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_from_tracing_genre_form_term": {
+          "properties": {
+            "control_subfield": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "genre_form_term": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "field_of_activity": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_information": {
+              "type": "string"
+            },
+            "field_of_activity": {
+              "type": "string"
+            },
+            "source_of_term": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "end_period": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "start_period": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "link_to_bibliographic_record_for_serial_or_multipart_item": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "control_number_of_related_bibliographic_record": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "established_heading_linking_entry_uniform_title": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "number_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "uniform_title": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "arranged_statement_for_music": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "key_for_music": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "date_of_treaty_signing": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "medium_of_performance_for_music": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "heading_geographic_subdivision": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "established_heading_linking_entry_meeting_name": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "type_of_meeting_name_entry_element": {
+              "type": "string"
+            },
+            "relator_term": {
+              "type": "string"
+            },
+            "location_of_meeting": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "meeting_name_or_jurisdiction_name_as_entry_element": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "name_of_meeting_following_jurisdiction_name_entry_element": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "number_of_part_section_meeting": {
+              "type": "string"
+            },
+            "date_of_meeting": {
+              "type": "string"
+            },
+            "subordinate_unit": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_also_from_tracing_genre_form_term": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "genre_form_term": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "heading_chronological_term": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_term": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "established_heading_linking_entry_medium_of_performance_term": {
+          "properties": {
+            "control_subfield": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "medium_of_performance_term_as_entry_element": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "machine_generated_metadata_provenance": {
+          "properties": {
+            "generation_agency": {
+              "type": "string"
+            },
+            "generation_date": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "generation_process": {
+              "type": "string"
+            },
+            "validity_end_date": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "bibliographic_record_control_number": {
+              "type": "string"
+            },
+            "confidence_value": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "method_of_machine_assignment": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "fuller_form_of_personal_name": {
+          "properties": {
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "source_of_information": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "fuller_form_of_personal_name": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_from_tracing_corporate_name": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "type_of_corporate_name_entry_element": {
+              "type": "string"
+            },
+            "relator_term": {
+              "type": "string"
+            },
+            "location_of_meeting": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "key_for_music": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "number_of_part_section_meeting": {
+              "type": "string"
+            },
+            "date_of_meeting_or_treaty_signing": {
+              "type": "string"
+            },
+            "subordinate_unit": {
+              "type": "string"
+            },
+            "arranged_statement_for_music": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "medium_of_performance_for_music": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "corporate_name_or_jurisdiction_name_as_entry_element": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "established_heading_linking_entry_topical_term": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "topical_term_or_geographic_name_entry_element": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "topical_term_following_geographic_name_entry_element": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "complex_see_also_reference_subject": {
+          "properties": {
+            "explanatory_text": {
+              "type": "string"
+            },
+            "heading_referred_to": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "authority_record_control_number": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "subdivision_usage": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "code_source": {
+              "type": "string"
+            },
+            "subdivision_usage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "government_document_classification_number": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "classification_number_element_ending_number_of_span": {
+              "type": "string"
+            },
+            "classification_number_element_single_number_of_beginning_number_of_span": {
+              "type": "string"
+            },
+            "number_source": {
+              "type": "string"
+            },
+            "explanatory_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "series_tracing_practice": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "volumes_dates_to_which_tracing_practice_applies": {
+              "type": "string"
+            },
+            "series_tracing_practice": {
+              "type": "string"
+            },
+            "institution_copy_to_which_field_applies": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "complex_linking_entry_data": {
+          "properties": {
+            "explanatory_text": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "heading_referred_to": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "alternate_graphic_representation": {
+          "properties": {
+            "same_as_associated_field": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "general_explanatory_reference_name": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "general_explanatory_reference": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "form_of_work": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_of_work": {
+              "type": "string"
+            },
+            "source_of_term": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_from_tracing_medium_of_performance_term": {
+          "properties": {
+            "control_subfield": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "medium_of_performance_term": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "format_of_notated_music": {
+          "properties": {
+            "materials_specified": {
+              "type": "string"
+            },
+            "format_of_notated_music_term": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "source_of_term": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "format_of_notated_music_code": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "national_agricultural_library_call_number": {
+          "properties": {
+            "classification_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "volumes_dates_to_which_call_number_applies": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "item_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "time_period_of_creation": {
+          "properties": {
+            "time_period_of_creation_term": {
+              "type": "string"
+            },
+            "materials_specified": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "source_of_term": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "type_of_time_period": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "dewey_decimal_call_number": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "volumes_dates_to_which_call_number_applies": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "classification_number": {
+              "type": "string"
+            },
+            "item_number": {
+              "type": "string"
+            },
+            "edition_number": {
+              "type": "string"
+            },
+            "type_of_edition": {
+              "type": "string"
+            },
+            "source_of_call_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_also_from_tracing_topical_term": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "topical_term_following_geographic_name_entry_element": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "topical_term_or_geographic_name_entry_element": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "gender": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_information": {
+              "type": "string"
+            },
+            "source_of_term": {
+              "type": "string"
+            },
+            "end_period": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "start_period": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "audience_characteristics": {
+          "properties": {
+            "audience_code": {
+              "type": "string"
+            },
+            "materials_specified": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "demographic_group_term": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "demographic_group_code": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "audience_term": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "cataloging_source": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "language_of_cataloging": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "modifying_agency": {
+              "type": "string"
+            },
+            "original_cataloging_agency": {
+              "type": "string"
+            },
+            "description_conventions": {
+              "type": "string"
+            },
+            "transcribing_agency": {
+              "type": "string"
+            },
+            "subject_heading_thesaurus_conventions": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_also_from_tracing_personal_name": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "attribution_qualifier": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "dates_associated_with_a_name": {
+              "type": "string"
+            },
+            "relator_term": {
+              "type": "string"
+            },
+            "number_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "fuller_form_of_name": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "key_for_music": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "numeration": {
+              "type": "string"
+            },
+            "arranged_statement_for_music": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "type_of_personal_name_entry_element": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "personal_name": {
+              "type": "string"
+            },
+            "titles_and_other_words_associated_with_a_name": {
+              "type": "string"
+            },
+            "medium_of_performance_for_music": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "established_heading_linking_entry_personal_name": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "attribution_qualifier": {
+              "type": "string"
+            },
+            "source_of_heading_or_term": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "dates_associated_with_a_name": {
+              "type": "string"
+            },
+            "relator_term": {
+              "type": "string"
+            },
+            "number_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "fuller_form_of_name": {
+              "type": "string"
+            },
+            "thesaurus": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "numeration": {
+              "type": "string"
+            },
+            "arranged_statement_for_music": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "type_of_personal_name_entry_element": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "key_for_music": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "personal_name": {
+              "type": "string"
+            },
+            "titles_and_other_words_associated_with_a_name": {
+              "type": "string"
+            },
+            "medium_of_performance_for_music": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "series_classification_practice": {
+          "properties": {
+            "volumes_dates_to_which_classification_practice_applies": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "series_classification_practice": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "character_sets_present": {
+          "properties": {
+            "primary_g0_character_set": {
+              "type": "string"
+            },
+            "primary_g1_character_set": {
+              "type": "string"
+            },
+            "alternate_g0_or_g1_character_set": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "creator_contributor_characteristics": {
+          "properties": {
+            "materials_specified": {
+              "type": "string"
+            },
+            "creator_contributor_term": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "demographic_group_term": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "demographic_group_code": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "creator_contributor_code": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "public_general_note": {
+          "properties": {
+            "explanatory_text": {
+              "type": "string"
+            },
+            "heading_or_subdivision_term": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "see_from_tracing_meeting_name": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "type_of_meeting_name_entry_element": {
+              "type": "string"
+            },
+            "relator_term": {
+              "type": "string"
+            },
+            "location_of_meeting": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "control_subfield": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "name_of_meeting_following_jurisdiction_name_entry_element": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "number_of_part_section_meeting": {
+              "type": "string"
+            },
+            "date_of_meeting": {
+              "type": "string"
+            },
+            "subordinate_unit": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "relationship_code": {
+              "type": "string"
+            },
+            "meeting_name_or_jurisdiction_name_as_entry_element": {
+              "type": "string"
+            },
+            "relationship_information": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "electronic_location_and_access": {
+          "properties": {
+            "name_of_location_of_host": {
+              "type": "string"
+            },
+            "materials_specified": {
+              "type": "string"
+            },
+            "settings": {
+              "type": "string"
+            },
+            "operating_system": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "terminal_emulation": {
+              "type": "string"
+            },
+            "access_method": {
+              "type": "string"
+            },
+            "path": {
+              "type": "string"
+            },
+            "public_note": {
+              "type": "string"
+            },
+            "instruction": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            },
+            "logon": {
+              "type": "string"
+            },
+            "processor_of_request": {
+              "type": "string"
+            },
+            "file_size": {
+              "type": "string"
+            },
+            "host_name": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "electronic_format_type": {
+              "type": "string"
+            },
+            "link_text": {
+              "type": "string"
+            },
+            "hours_access_method_available": {
+              "type": "string"
+            },
+            "compression_information": {
+              "type": "string"
+            },
+            "bits_per_second": {
+              "type": "string"
+            },
+            "nonpublic_note": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "access_number": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            },
+            "contact_for_access_assistance": {
+              "type": "string"
+            },
+            "electronic_name": {
+              "type": "string"
+            },
+            "port": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "series_numbering_example": {
+          "properties": {
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "volumes_dates_to_which_series_numbering_example_applies": {
+              "type": "string"
+            },
+            "series_numbering_example": {
+              "type": "string"
+            },
+            "institution_copy_to_which_field_applies": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "heading_meeting_name": {
+          "properties": {
+            "language_of_a_work": {
+              "type": "string"
+            },
+            "name_of_part_section_of_a_work": {
+              "type": "string"
+            },
+            "title_of_a_work": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "type_of_meeting_name_entry_element": {
+              "type": "string"
+            },
+            "relator_term": {
+              "type": "string"
+            },
+            "location_of_meeting": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "medium": {
+              "type": "string"
+            },
+            "name_of_meeting_following_jurisdiction_name_entry_element": {
+              "type": "string"
+            },
+            "date_of_a_work": {
+              "type": "string"
+            },
+            "miscellaneous_information": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "number_of_part_section_meeting": {
+              "type": "string"
+            },
+            "subordinate_unit": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "date_of_meeting": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subheading": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "meeting_name_or_jurisdiction_name_as_entry_element": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "series_place_and_publisher_issuing_body": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "place": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "publisher_issuing_body": {
+              "type": "string"
+            },
+            "volumes_dates_to_which_place_and_publisher_issuing_body_apply": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "heading_chronological_subdivision": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "form_subdivision": {
+              "type": "string"
+            },
+            "chronological_subdivision": {
+              "type": "string"
+            },
+            "general_subdivision": {
+              "type": "string"
+            },
+            "geographic_subdivision": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "medium_of_performance": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "note": {
+              "type": "string"
+            },
+            "authority_record_control_number_or_standard_number": {
+              "type": "string"
+            },
+            "number_of_performers_of_the_same_medium": {
+              "type": "string"
+            },
+            "total_number_of_performers": {
+              "type": "string"
+            },
+            "number_of_ensembles": {
+              "type": "string"
+            },
+            "display_constant_controller": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "medium_of_performance": {
+              "type": "string"
+            },
+            "soloist": {
+              "type": "string"
+            },
+            "source_of_term": {
+              "type": "string"
+            },
+            "doubling_instrument": {
+              "type": "string"
+            },
+            "alternative_medium_of_performance": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "dewey_decimal_classification_number": {
+          "properties": {
+            "classification_number_element_single_number_or_beginning_number_of_span": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            },
+            "explanatory_term": {
+              "type": "string"
+            },
+            "table_identification_table_number": {
+              "type": "string"
+            },
+            "classification_number_element_ending_number_of_span": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "source_of_classification_number": {
+              "type": "string"
+            },
+            "table_sequence_number_for_internal_subarrangement_or_add_table": {
+              "type": "string"
+            },
+            "edition_number": {
+              "type": "string"
+            },
+            "type_of_edition": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "library_and_archives_canada_call_number": {
+          "properties": {
+            "item_number": {
+              "type": "string"
+            },
+            "volumes_dates_to_which_call_number_applies": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "linkage": {
+              "type": "string"
+            },
+            "classification_number": {
+              "type": "string"
+            },
+            "institution_to_which_field_applies": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "associated_place": {
+          "properties": {
+            "linkage": {
+              "type": "string"
+            },
+            "place_of_residence_headquarters": {
+              "type": "string"
+            },
+            "place_of_birth": {
+              "type": "string"
+            },
+            "end_period": {
+              "type": "string"
+            },
+            "other_associated_place": {
+              "type": "string"
+            },
+            "uniform_resource_identifier": {
+              "type": "string"
+            },
+            "associated_country": {
+              "type": "string"
+            },
+            "start_period": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            },
+            "place_of_death": {
+              "type": "string"
+            },
+            "source_of_term": {
+              "type": "string"
+            },
+            "record_control_number": {
+              "type": "string"
+            },
+            "source_of_information": {
+              "type": "string"
+            },
+            "place_of_origin_of_work": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "library_of_congress_control_number": {
+          "properties": {
+            "canceled_invalid_lc_control_number": {
+              "type": "string"
+            },
+            "lc_control_number": {
+              "type": "string"
+            },
+            "field_link_and_sequence_number": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "date_detection": true
+    }
+  }
+}
