@@ -1,0 +1,116 @@
+{# -*- coding: utf-8 -*-
+#
+# This file is part of Invenio.
+# Copyright (C) 2016 CERN.
+#
+# Invenio is free software; you can redistribute it
+# and/or modify it under the terms of the GNU General Public License as
+# published by the Free Software Foundation; either version 2 of the
+# License, or (at your option) any later version.
+#
+# Invenio is distributed in the hope that it will be
+# useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with Invenio; if not, write to the
+# Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+# MA 02111-1307, USA.
+#
+# In applying this license, CERN does not
+# waive the privileges and immunities granted to it by virtue of its status
+# as an Intergovernmental Organization or submit itself to any jurisdiction.
+-#}
+{%- extends config.APP_BASE_TEMPLATE %}
+
+{%- macro record_content(data) %}
+  {% for key, value in data.items() recursive %}
+    <li class="list-group-item">
+    {% if value is mapping %}
+        <strong>{{ key }}:</strong>
+        <ul class="list-group">{{ loop(value.items()) }}</ul>
+    {% elif value is iterable and value is not string %}
+        <strong>{{ key }}:</strong>
+        <ol>
+        {% for item in value %}
+          <li>
+          {% if item is mapping %}
+            <ul class="list-group">
+              {{ record_content(item) }}
+            </ul>
+          {% else %}
+            {{ item }}
+          {% endif %}
+          </li>
+        {% endfor %}
+        </ol>
+    {% else %}
+      <strong>{{ key }}:</strong> {{ value }}
+    {% endif %}
+    </li>
+  {% endfor %}
+{%- endmacro %}
+
+{%- block page_body %}
+<div class="container">
+  <div class="extra-info">
+    {%- if pid %}
+      {%- block record_control_number %}
+      <b>{{ _('control number:') }}</b>
+      {{ pid.pid_type }} {{pid.pid_value}}
+      {%- endblock %}
+    {% endif %}
+    </br>
+    {%- if 'publication_distribution_imprint' in record %}
+      {%- block record_publication_date %}
+        <b>{{ _('Publication date:') }}</b>
+        {{ record['publication_distribution_imprint'][0]['date_of_publication_distribution'][0] }}
+      {%- endblock %}
+    {% endif %}
+    </br>
+    {%- if 'other_standard_identifier' in record %}
+      {%- block record_other_standard_identifier %}
+        <b>{{ _('OAI Id:') }}</b>
+        {{ record['other_standard_identifier'][0]['standard_number_or_code'] }}
+      {%- endblock %}
+    {% endif %}
+  </div>
+  <div class="body">
+    {%- if 'title_statement' in record %}
+      {%- block record_title %}
+        <h2>{{ record['title_statement']['title'] }} <br>
+        </h2>
+      {%- endblock %}
+    {% endif %}
+    {%- if 'main_entry_personal_name' in record %}
+      {%- block record_author %}
+        <p><i>
+          {{ record['main_entry_personal_name']['personal_name'] }}
+          {%- if 'added_entry_personal_name' in record %}
+            {{ record['added_entry_personal_name']
+                | map(attribute='personal_name') | join(', ') }}
+          {% endif %}
+        </i></p>
+      {%- endblock %}
+    {% endif %}
+    {%- if 'summary' in record %}
+      {%- block record_summary %}
+        <p>{{ record['summary'][0]['summary'] }}</p>
+      {%- endblock %}
+    {%- endif %}
+  </div>
+</div>
+<div class="raw">
+  {%- block record_raw %}
+  {% if record %}
+    <div class="panel panel-default">
+      <p>Record:</p>
+      <ul class="list-group">
+        {{ record_content(record) }}
+      </ul>
+    </div>
+  {% endif %}
+  {%- endblock %}
+</div>
+{%- endblock %}

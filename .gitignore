@@ -57,3 +57,12 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# example app
+examples/static/gen/
+examples/static/images/
+examples/static/js/
+examples/static/node_modules/
+examples/static/package.json
+examples/static/scss
+examples/static/.webassets-cache/

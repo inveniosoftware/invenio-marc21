@@ -41,3 +41,7 @@ recursive-include invenio_marc21 *.html
 recursive-include invenio_marc21 *.po *.pot *.mo
 recursive-include invenio_marc21 *.json
 recursive-include tests *.py
+recursive-include examples *.html
+recursive-exclude examples/static/gen *
+recursive-exclude examples/static/node_modules *
+recursive-include examples/static/app *

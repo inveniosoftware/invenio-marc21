@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+{# -*- coding: utf-8 -*-
 #
 # This file is part of Invenio.
 # Copyright (C) 2016 CERN.
@@ -21,38 +21,20 @@
 # In applying this license, CERN does not
 # waive the privileges and immunities granted to it by virtue of its status
 # as an Intergovernmental Organization or submit itself to any jurisdiction.
-
-
-root = true
-
-[*]
-indent_style = space
-end_of_line = lf
-insert_final_newline = true
-trim_trailing_whitespace = true
-charset = utf-8
-
-# Python files
-[*.py]
-indent_size = 4
-# isort plugin configuration
-known_first_party = invenio_marc21
-known_third_party = dojson
-multi_line_output = 2
-default_section = THIRDPARTY
-
-# RST files (used by sphinx)
-[*.rst]
-indent_size = 4
-
-# CSS, HTML, JS, JSON, YML
-[*.{css,html,js,json,yml}]
-indent_size = 2
-
-# Matches the exact files either package.json or .travis.yml
-[{package.json,.travis.yml}]
-indent_size = 2
-
-# Dockerfile
-[Dockerfile]
-indent_size = 4
+-#}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% assets "app_css" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}"></link>
+    {% endassets %}
+  </head>
+  <body>
+    <h1 class=title>{{ title }}</h1>
+    {%- block page_body %}{%- endblock page_body %}
+    </body>
+</html>
