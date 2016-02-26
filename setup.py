@@ -42,9 +42,9 @@ tests_require = [
     'pytest-cov>=1.8.0',
     'pytest-pep8>=1.0.6',
     'pytest>=2.8.0',
-    'dojson>=1.0.1',
     'invenio-db>=1.0.0a9',
     'invenio-indexer>=1.0.0a1',
+    'invenio-pidstore>=1.0.0a3',
     'invenio-records>=1.0.0a9',
     'invenio-search>=1.0.0a4',
 ]
@@ -67,6 +67,8 @@ setup_requires = [
 
 install_requires = [
     'Flask-BabelEx>=0.9.2',
+    'dojson>=1.0.1',
+    'invenio-records-rest>=1.0.0a6',
 ]
 
 packages = find_packages()

@@ -22,45 +22,15 @@
 # waive the privileges and immunities granted to it by virtue of its status
 # as an Intergovernmental Organization or submit itself to any jurisdiction.
 
+"""Record serialization."""
 
-notifications:
-  email: false
+from __future__ import absolute_import, print_function
 
-sudo: false
+from dojson.contrib.to_marc21 import to_marc21
+from .marcxml import MARCXMLSerializer
+from invenio_records_rest.serializers.response import record_responsify, \
+    search_responsify
 
-language: python
-
-cache:
-  - pip
-
-services:
-  - elasticsearch
-
-env:
-# TODO: Temporary turned off released versions during development
-#  - REQUIREMENTS=lowest
-#  - REQUIREMENTS=release
-  - REQUIREMENTS=devel
-
-python:
-  - "2.7"
-  - "3.3"
-  - "3.4"
-  - "3.5"
-
-before_install:
-  - "travis_retry pip install --upgrade pip setuptools py"
-  - "travis_retry pip install twine wheel coveralls requirements-builder"
-  - "requirements-builder --level=min setup.py > .travis-lowest-requirements.txt"
-  - "requirements-builder --level=pypi setup.py > .travis-release-requirements.txt"
-  - "requirements-builder --level=dev --req requirements-devel.txt setup.py > .travis-devel-requirements.txt"
-
-install:
-  - "travis_retry pip install -r .travis-${REQUIREMENTS}-requirements.txt"
-  - "travis_retry pip install -e .[all]"
-
-script:
-  - "./run-tests.sh"
-
-after_success:
-  - coveralls
+marcxml_v1 = MARCXMLSerializer(to_marc21)
+json_v1_response = record_responsify(marcxml_v1, 'application/json')
+json_v1_search = search_responsify(marcxml_v1, 'application/json')
