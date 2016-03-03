@@ -69,6 +69,7 @@ install_requires = [
     'Flask-BabelEx>=0.9.2',
     'dojson>=1.0.1',
     'invenio-records-rest>=1.0.0a6',
+    'invenio-jsonschemas>=1.0.0a2',
 ]
 
 packages = find_packages()
@@ -100,6 +101,9 @@ setup(
         ],
         'invenio_i18n.translations': [
             'messages = invenio_marc21',
+        ],
+        'invenio_jsonschemas.schemas': [
+            'invenio_marc21 = invenio_marc21.jsonschemas',
         ],
         'invenio_search.mappings': [
             'mappings = invenio_marc21',
