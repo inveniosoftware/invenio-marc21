@@ -106,7 +106,9 @@ setup(
             'invenio_marc21 = invenio_marc21.jsonschemas',
         ],
         'invenio_search.mappings': [
-            'mappings = invenio_marc21',
+            'marc21bibliographic = invenio_marc21.mappings',
+            'marc21authority = invenio_marc21.mappings',
+            'marc21holdings = invenio_marc21.mappings',
         ]
     },
     extras_require=extras_require,

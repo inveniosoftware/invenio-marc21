@@ -35,8 +35,9 @@ from flask import Flask
 from flask_babelex import Babel
 from flask_cli import FlaskCLI
 from invenio_db import InvenioDB, db
+from invenio_jsonschemas import InvenioJSONSchemas
 from invenio_records import InvenioRecords
-from invenio_search.proxies import current_search
+from invenio_search import InvenioSearch
 
 from invenio_marc21 import InvenioMARC21
 
@@ -56,24 +57,29 @@ def es_app(request):
     """Flask application with records fixture."""
     app = Flask(__name__)
     app.config.update(
+        JSONSCHEMAS_HOST='http://localhost:5000',
         SQLALCHEMY_DATABASE_URI=os.environ.get(
             'SQLALCHEMY_DATABASE_URI', 'sqlite:///test.db'),
     )
+    app.config[InvenioJSONSchemas.CONFIG_ENDPOINT] = '/'
 
     Babel(app)
     FlaskCLI(app)
     InvenioDB(app)
     InvenioRecords(app)
     InvenioMARC21(app)
-
-    sleep(10)
+    search = InvenioSearch(app)
+    InvenioJSONSchemas(app)
 
     with app.app_context():
         db.create_all()
+        list(search.cleate())
+        sleep(10)
 
     def teardown():
         with app.app_context():
             db.drop_all()
+            list(search.delete())
 
     request.addfinalizer(teardown)
 
