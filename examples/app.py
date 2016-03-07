@@ -27,20 +27,17 @@ r"""Minimal Flask application example for development.
 
 Usage:
 
-1. Install invenio-marc21:
+1. Install requrements for this example app by running:
 
     .. code-block:: console
 
-        cdvirtualenv src/invenio-marc21
-        pip install -e .[all]
-        pip install invenio-theme==1.0.0a9
-        pip install invenio-assets==1.0.0a4
+        $ cdvirtualenv src/invenio-marc21/examples
+        $ pip install -r requirements.txt
 
 2. Create database and tables:
 
     .. code-block:: console
 
-        $ cd examples
         $ flask -a app.py db init
         $ flask -a app.py db create
 
@@ -113,7 +110,6 @@ app.config.update(
     SQLALCHEMY_DATABASE_URI=os.getenv('SQLALCHEMY_DATABASE_URI',
                                       'sqlite:///app.db'),
 )
-app.debug = True
 Babel(app)
 FlaskCLI(app)
 InvenioDB(app)

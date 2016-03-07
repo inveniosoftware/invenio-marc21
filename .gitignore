@@ -66,3 +66,6 @@ examples/static/node_modules/
 examples/static/package.json
 examples/static/scss
 examples/static/.webassets-cache/
+
+# tests
+tests/test.db

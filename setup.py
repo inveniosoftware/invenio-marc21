@@ -36,17 +36,18 @@ history = open('CHANGES.rst').read()
 tests_require = [
     'check-manifest>=0.25',
     'coverage>=4.0',
-    'isort>=4.2.2',
-    'pydocstyle>=1.0.0',
-    'pytest-cache>=1.0',
-    'pytest-cov>=1.8.0',
-    'pytest-pep8>=1.0.6',
-    'pytest>=2.8.0',
     'invenio-db>=1.0.0a9',
     'invenio-indexer>=1.0.0a1',
     'invenio-pidstore>=1.0.0a3',
     'invenio-records>=1.0.0a9',
     'invenio-search>=1.0.0a4',
+    'isort>=4.2.2',
+    'mock>=1.3.0',
+    'pydocstyle>=1.0.0',
+    'pytest-cache>=1.0',
+    'pytest-cov>=1.8.0',
+    'pytest-pep8>=1.0.6',
+    'pytest>=2.8.0',
 ]
 
 extras_require = {

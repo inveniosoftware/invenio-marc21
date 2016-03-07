@@ -27,7 +27,6 @@
 from __future__ import absolute_import, print_function
 
 from dojson.contrib.marc21.utils import GroupableOrderedDict
-
 from invenio_records_rest.serializers.base import PreprocessorMixin
 
 
