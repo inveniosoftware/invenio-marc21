@@ -73,7 +73,7 @@ def es_app(request):
 
     with app.app_context():
         db.create_all()
-        list(search.cleate())
+        list(search.create())
         sleep(10)
 
     def teardown():
