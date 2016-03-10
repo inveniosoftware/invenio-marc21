@@ -31,7 +31,7 @@ Usage:
 
     .. code-block:: console
 
-        $ cdvirtualenv src/invenio-marc21/examples
+        $ cd examples
         $ pip install -r requirements.txt
 
 2. Create database and tables:

@@ -25,10 +25,9 @@
 """Invenio module with nice defaults for MARC21 overlay."""
 
 import os
-import sys
 
 from setuptools import find_packages, setup
-from setuptools.command.test import test as TestCommand
+
 
 readme = open('README.rst').read()
 history = open('CHANGES.rst').read()
@@ -68,8 +67,8 @@ setup_requires = [
 
 install_requires = [
     'Flask-BabelEx>=0.9.2',
-    'dojson>=1.1.0.dev20160310',
-    'invenio-records-rest>=1.0.0a6',
+    'dojson>=1.1.0',
+    'invenio-records-rest>=1.0.0a7.dev20160219',
     'invenio-jsonschemas>=1.0.0a2',
 ]
 

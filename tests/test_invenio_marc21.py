@@ -31,7 +31,6 @@ import mock
 import pkg_resources
 from dojson.contrib.marc21.utils import load
 from flask import Flask
-from flask_babelex import Babel
 from invenio_db import db
 from invenio_indexer.api import RecordIndexer
 from invenio_records import Record
@@ -57,16 +56,6 @@ def test_init():
     assert 'invenio-marc21' not in app.extensions
     ext.init_app(app)
     assert 'invenio-marc21' in app.extensions
-
-
-def test_view(app):
-    """Test view."""
-    Babel(app)
-    InvenioMARC21(app)
-    with app.test_client() as client:
-        res = client.get("/")
-        assert res.status_code == 200
-        assert 'Welcome to Invenio-MARC21' in str(res.data)
 
 
 def mock_record_validate(self):
