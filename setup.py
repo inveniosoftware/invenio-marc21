@@ -68,7 +68,7 @@ setup_requires = [
 
 install_requires = [
     'Flask-BabelEx>=0.9.2',
-    'dojson>=1.0.1',
+    'dojson>=1.1.0.dev20160310',
     'invenio-records-rest>=1.0.0a6',
     'invenio-jsonschemas>=1.0.0a2',
 ]
@@ -104,13 +104,11 @@ setup(
             'messages = invenio_marc21',
         ],
         'invenio_jsonschemas.schemas': [
-            'invenio_marc21 = invenio_marc21.jsonschemas',
+            'marc21 = dojson.contrib.marc21.schemas',
         ],
         'invenio_search.mappings': [
-            'marc21bibliographic = invenio_marc21.mappings',
-            'marc21authority = invenio_marc21.mappings',
-            'marc21holdings = invenio_marc21.mappings',
-        ]
+            'marc21 = invenio_marc21.mappings',
+        ],
     },
     extras_require=extras_require,
     install_requires=install_requires,

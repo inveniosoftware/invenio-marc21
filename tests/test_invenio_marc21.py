@@ -103,7 +103,7 @@ def load_records(es_app, filename, schema):
 def test_authority_data(es_app, request):
     """Test indexation using authority data."""
     schema = ('http://localhost:5000/'
-              'marc21authority/marc21authority-v1.0.0.json')
+              'marc21/authority/ad-v1.0.0.json')
     load_records(es_app=es_app, filename='data/marc21/authority.xml',
                  schema=schema)
 
@@ -111,6 +111,6 @@ def test_authority_data(es_app, request):
 def test_bibliographic_data(es_app, request):
     """Test indexation using bibliographic data."""
     schema = ('http://localhost:5000/'
-              'marc21bibliographic/marc21bibliographic-v1.0.0.json')
+              'marc21/bibliographic/bd-v1.0.0.json')
     load_records(es_app=es_app, filename='data/marc21/bibliographic.xml',
                  schema=schema)

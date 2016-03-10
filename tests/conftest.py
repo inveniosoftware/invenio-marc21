@@ -35,6 +35,7 @@ from flask import Flask
 from flask_babelex import Babel
 from flask_cli import FlaskCLI
 from invenio_db import InvenioDB, db
+from invenio_indexer import InvenioIndexer
 from invenio_jsonschemas import InvenioJSONSchemas
 from invenio_records import InvenioRecords
 from invenio_search import InvenioSearch
@@ -69,6 +70,7 @@ def es_app(request):
     InvenioRecords(app)
     InvenioMARC21(app)
     search = InvenioSearch(app)
+    InvenioIndexer(app)
     InvenioJSONSchemas(app)
 
     with app.app_context():
