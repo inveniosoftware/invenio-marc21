@@ -63,13 +63,14 @@ def test_example_app():
 
     # Testing record creation
     cmd = """dojson -i {0} -l marcxml do marc21 | \
-             flask -a app.py records create""".format(source)
+             flask -a app.py records create --pid-minter recid""".format(
+        source
+    )
     exit_status = subprocess.call(cmd, shell=True)
     assert exit_status == 0
 
     # Download javascript and css libraries
-    for cmd in ['flask -a app.py fixtures records',
-                'flask -a app.py npm',
+    for cmd in ['flask -a app.py npm',
                 'cd static && npm install && cd ..',
                 'npm install -g node-sass clean-css requirejs uglify-js',
                 'flask -a app.py collect -v',

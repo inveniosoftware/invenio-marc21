@@ -51,8 +51,7 @@ invenio_records/data/marc21/bibliographic.xml):
         $ wget "https://github.com/inveniosoftware/invenio-records/raw/\
             master/invenio_records/data/marc21/bibliographic.xml"
         $ dojson -i bibliographic.xml -l marcxml do marc21 | \
-            flask -a app.py records create
-        $ flask -a app.py fixtures records
+            flask -a app.py records create --pid-minter recid
 
 4. Download javascript and css libraries:
 
@@ -94,6 +93,7 @@ from flask_babelex import Babel
 from flask_cli import FlaskCLI
 from invenio_assets import InvenioAssets, NpmBundle
 from invenio_db import InvenioDB, db
+from invenio_pidstore import InvenioPIDStore
 from invenio_pidstore.minters import recid_minter
 from invenio_pidstore.models import PersistentIdentifier
 from invenio_records import InvenioRecords
@@ -116,6 +116,7 @@ InvenioDB(app)
 InvenioTheme(app)
 assets = InvenioAssets(app)
 InvenioRecords(app)
+InvenioPIDStore(app)
 InvenioSearch(app)
 InvenioMARC21(app)
 
@@ -138,17 +139,3 @@ def example(index):
 
     return render_template("app/detail.html", record=record.json, pid=pid,
                            title="Demosite Invenio Org")
-
-
-@app.cli.group()
-def fixtures():
-    """Initialize example data."""
-
-
-@fixtures.command()
-def records():
-    """Load fixtures."""
-    with db.session.begin_nested():
-        for record in RecordMetadata.query.all():
-            recid_minter(record.id, record.json)
-    db.session.commit()
