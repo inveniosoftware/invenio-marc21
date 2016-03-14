@@ -37,9 +37,8 @@ services:
   - elasticsearch
 
 env:
-# TODO: Temporary turned off released versions during development
-#  - REQUIREMENTS=lowest
-#  - REQUIREMENTS=release
+  - REQUIREMENTS=lowest
+  - REQUIREMENTS=release
   - REQUIREMENTS=devel
 
 python:
