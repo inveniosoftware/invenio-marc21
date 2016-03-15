@@ -70,3 +70,14 @@ script:
 
 after_success:
   - coveralls
+
+deploy:
+  provider: pypi
+  user: jirikuncar
+  password:
+    secure: norMPnfucZ8meNzb0iB0z50KBoPdyfy2ySXnRM+p11iJttcBwYi49AXVUfACf7tbwBOg3egcHd5ophq58d0bZsalnUH8g0/P9f8AfobtdVe3C8ojbWcyPavaAEKDE1tJ+/DUVKibnbvtPGhXAqu4rx5XtdY2icOwoPkajeBwrULOueS5PnnzBjZlzEqMHoepo4in//cWQReLQ1JvTvCiVw/CKgPX5LUxUTg1ZDzVbQFZOGpV1pfy9NgFthGT03DOFKZcqtOowjjC7olLnqzn6J+tX/SYEdXkheTpZt22Cv7kD3xrDXYFJjZzginNNDwsAYmoV4tOduk/99dl1zBr5QtNI3IiHopM3wXA59UjSGUxJBxqaTA2zxI1jPPfk3wuYKmMy0PLnUq/Gl1TZQz3Ka7EvpNIxR2XqOe0aFE0yHjDBH/DKNG8tiBLxpq12RV/0CdhF7eyU0fA/1aZBZiakKdWVxPXRispeIqcH1HwCJmKZcBqM58rewRIP8G/W/QEyyNxNb2q1+gZWRBSz5KIbIVcf+UvFeVpv1fTmZhz7ZTaB65mJaVpaF7dz8lZM/Eu2RTMUqKcOSdXDYhM8GIo/bT6BLvzutGtryDrpYwp6sgjXwVoYm4r722mK/I5f1gGMmeyhAeUMFjf+rXuzhskSFQHZ+nCHoL6RsNgT0fQQn8=
+  on:
+    tags: true
+    distributions: sdist bdist_wheel
+    repo: inveniosoftware/invenio-marc21
+    condition: $REQUIREMENTS = release
