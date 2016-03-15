@@ -29,6 +29,7 @@ from __future__ import absolute_import, print_function
 
 import mock
 import pkg_resources
+from dojson.contrib.marc21 import marc21
 from dojson.contrib.marc21.utils import load
 from flask import Flask
 from invenio_db import db
@@ -73,7 +74,7 @@ def load_records(es_app, filename, schema):
         records_data = load(data_filename)
         records = []
         for item in records_data:
-            item_dict = dict(item)
+            item_dict = dict(marc21.do(item))
             item_dict['$schema'] = schema
             record = Record.create(item_dict)
             records.append(record)
