@@ -26,7 +26,8 @@
 
 from __future__ import absolute_import, print_function
 
-from dojson.contrib.to_marc21.utils import dumps
+from dojson.contrib.to_marc21.utils import dumps, dumps_etree
+from invenio_records.api import Record
 
 from .dojson import DoJSONSerializer
 
@@ -40,7 +41,9 @@ class MARCXMLSerializer(DoJSONSerializer):
 
     def __init__(self, dojson_model, xslt_filename=None, schema_class=None):
         """."""
-        self.xslt_filename = xslt_filename
+        self.dumps_kwargs = dict(xslt_filename=xslt_filename) if \
+            xslt_filename else {}
+
         self.schema_class = schema_class
         super(MARCXMLSerializer, self).__init__(dojson_model)
 
@@ -58,10 +61,8 @@ class MARCXMLSerializer(DoJSONSerializer):
         :param links_factory: Factory function for the link generation,
                               which are added to the response.
         """
-        dumps_kwargs = dict(xslt_filename=self.xslt_filename) if \
-            self.xslt_filename else dict()
         return dumps(self.transform_record(pid, record, links_factory),
-                     **dumps_kwargs)
+                     **self.dumps_kwargs)
 
     def serialize_search(self, pid_fetcher, search_result,
                          item_links_factory=None, **kwargs):
@@ -78,6 +79,12 @@ class MARCXMLSerializer(DoJSONSerializer):
                                          links_factory=item_links_factory)
                for hit in search_result['hits']['hits']]
 
-        dumps_kwargs = dict(xslt_filename=self.xslt_filename) if \
-            self.xslt_filename else dict()
-        return dumps(ret, **dumps_kwargs)
+        return dumps(ret, **self.dumps_kwargs)
+
+    def serialize_oaipmh(self, pid, record):
+        """Serialize a single record for OAI-PMH."""
+        obj = self.transform_record(pid, record) \
+            if isinstance(record, Record) \
+            else self.transform_search_hit(pid, record)
+
+        return dumps_etree(obj, **self.dumps_kwargs)

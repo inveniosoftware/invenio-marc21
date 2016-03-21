@@ -46,16 +46,14 @@ def test_serialize(app):
         PersistentIdentifier(pid_type='recid', pid_value='2'),
         Record({'title': 'test'}))
     expected = u"<?xml version='1.0' encoding='UTF-8'?>\n" \
-               u'<collection xmlns="http://www.loc.gov/MARC21/slim">\n' \
-               u'  <record>\n' \
-               u'    <controlfield tag="001">2</controlfield>\n' \
-               u'  </record>\n' \
-               u'</collection>\n'
+               u'<record xmlns="http://www.loc.gov/MARC21/slim">\n' \
+               u'  <controlfield tag="001">2</controlfield>\n' \
+               u'</record>\n'
     assert data.decode('utf8') == expected
 
 
 def test_serialize_search():
-    """Test JSON serialize."""
+    """Test MARCXML serialize."""
     def fetcher(obj_uuid, data):
         return PersistentIdentifier(pid_type='recid', pid_value=data['pid'])
 
@@ -83,3 +81,14 @@ def test_serialize_search():
                u'  </record>\n' \
                u'</collection>\n'
     assert data.decode('utf8') == expected
+
+
+def test_serialize_oaipmh():
+    """Test MARCXML serialize."""
+    s = MARCXMLSerializer(to_marc21, schema_class=MySchema)
+
+    tree = s.serialize_oaipmh(
+        PersistentIdentifier(pid_type='recid', pid_value='2'),
+        Record({'title': 'test'}))
+
+    assert tree.getchildren()[0].text == '2'
