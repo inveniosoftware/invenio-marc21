@@ -89,6 +89,6 @@ def test_serialize_oaipmh():
 
     tree = s.serialize_oaipmh(
         PersistentIdentifier(pid_type='recid', pid_value='2'),
-        Record({'title': 'test'}))
+        {'_source': Record({'title': 'test'})})
 
     assert tree.getchildren()[0].text == '2'

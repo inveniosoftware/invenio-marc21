@@ -83,8 +83,8 @@ class MARCXMLSerializer(DoJSONSerializer):
 
     def serialize_oaipmh(self, pid, record):
         """Serialize a single record for OAI-PMH."""
-        obj = self.transform_record(pid, record) \
-            if isinstance(record, Record) \
+        obj = self.transform_record(pid, record['_source']) \
+            if isinstance(record['_source'], Record) \
             else self.transform_search_hit(pid, record)
 
         return dumps_etree(obj, **self.dumps_kwargs)
