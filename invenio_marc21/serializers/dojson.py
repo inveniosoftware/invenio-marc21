@@ -33,9 +33,10 @@ from invenio_records_rest.serializers.base import PreprocessorMixin
 class DoJSONSerializer(PreprocessorMixin):
     """Base class for marshmallow serializers."""
 
-    def __init__(self, dojson_model):
+    def __init__(self, dojson_model, replace_refs=False):
         """Initialize record."""
         self.dojson_model = dojson_model
+        super(DoJSONSerializer, self).__init__(replace_refs=replace_refs)
 
     def dump(self, obj):
         """Serialize object with schema."""

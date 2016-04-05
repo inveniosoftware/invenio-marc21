@@ -39,13 +39,15 @@ class MARCXMLSerializer(DoJSONSerializer):
     records due to high memory usage.
     """
 
-    def __init__(self, dojson_model, xslt_filename=None, schema_class=None):
+    def __init__(self, dojson_model, xslt_filename=None, schema_class=None,
+                 replace_refs=False):
         """."""
         self.dumps_kwargs = dict(xslt_filename=xslt_filename) if \
             xslt_filename else {}
 
         self.schema_class = schema_class
-        super(MARCXMLSerializer, self).__init__(dojson_model)
+        super(MARCXMLSerializer, self).__init__(
+            dojson_model, replace_refs=replace_refs)
 
     def dump(self, obj):
         """Dump object."""
