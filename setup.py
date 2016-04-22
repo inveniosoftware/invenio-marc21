@@ -39,7 +39,7 @@ tests_require = [
     'invenio-indexer>=1.0.0a1',
     'invenio-pidstore>=1.0.0a7',
     'invenio-records>=1.0.0a12',
-    'invenio-search>=1.0.0a4',
+    'invenio-search>=1.0.0a7',
     'isort>=4.2.2',
     'mock>=1.3.0',
     'pydocstyle>=1.0.0',
@@ -69,8 +69,8 @@ install_requires = [
     'Flask-BabelEx>=0.9.2',
     'dojson>=1.2.0',
     'invenio-jsonschemas>=1.0.0a2',
-    'invenio-records-rest>=1.0.0a8',
-    'invenio-records-ui>=1.0.0a5',
+    'invenio-records-rest>=1.0.0a9',
+    'invenio-records-ui>=1.0.0a6',
 ]
 
 packages = find_packages()
