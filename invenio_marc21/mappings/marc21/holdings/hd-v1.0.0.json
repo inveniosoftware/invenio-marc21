@@ -1,4 +1,7 @@
 {
+  "settings": {
+    "index.percolator.map_unmapped_fields_as_string": true
+  },
   "mappings": {
     "hd-v1.0.0": {
       "numeric_detection": true,
