@@ -90,7 +90,7 @@ setup(
     keywords='invenio MARC21',
     license='GPLv2',
     author='CERN',
-    author_email='info@invenio-software.org',
+    author_email='info@inveniosoftware.org',
     url='https://github.com/inveniosoftware/invenio-marc21',
     packages=packages,
     zip_safe=False,
