@@ -22,34 +22,12 @@
 # waive the privileges and immunities granted to it by virtue of its status
 # as an Intergovernmental Organization or submit itself to any jurisdiction.
 
-"""Invenio module with nice defaults for MARC21 overlay."""
+"""Nice defaults for an overlay using MARC21 format."""
 
-from __future__ import absolute_import, print_function
+import copy
 
-from . import config
-from .views import blueprint
+from invenio_records_rest.config import RECORDS_REST_ENDPOINTS
 
 
-class InvenioMARC21(object):
-    """Invenio-MARC21 extension."""
-
-    def __init__(self, app=None):
-        """Extension initialization."""
-        if app:
-            self.init_app(app)
-
-    def init_app(self, app):
-        """Flask application initialization."""
-        self.init_config(app)
-        app.register_blueprint(blueprint)
-        app.extensions['invenio-marc21'] = self
-
-    def init_config(self, app):
-        """Initialize configuration."""
-        app.config.setdefault(
-            'MARC21_BASE_TEMPLATE',
-            app.config.get('BASE_TEMPLATE',
-                           'invenio_marc21/base.html'))
-        for k in dir(config):
-            if k.startswith('MARC21_'):
-                app.config.setdefault(k, getattr(config, k))
+MARC21_REST_ENDPOINTS = copy.deepcopy(RECORDS_REST_ENDPOINTS)
+MARC21_REST_ENDPOINTS['recid']['search_index'] = 'marc21'
