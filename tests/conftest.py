@@ -33,7 +33,6 @@ from time import sleep
 import pytest
 from flask import Flask
 from flask_babelex import Babel
-from flask_cli import FlaskCLI
 from invenio_db import InvenioDB, db
 from invenio_indexer import InvenioIndexer
 from invenio_jsonschemas import InvenioJSONSchemas
@@ -65,7 +64,9 @@ def es_app(request):
     app.config[InvenioJSONSchemas.CONFIG_ENDPOINT] = '/'
 
     Babel(app)
-    FlaskCLI(app)
+    if not hasattr(app, 'cli'):
+        from flask_cli import FlaskCLI
+        FlaskCLI(app)
     InvenioDB(app)
     InvenioRecords(app)
     InvenioMARC21(app)

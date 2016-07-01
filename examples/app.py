@@ -33,13 +33,14 @@ Usage:
 
         $ cd examples
         $ pip install -r requirements.txt
+        $ export FLASK_APP=app.py
 
 2. Create database and tables:
 
     .. code-block:: console
 
-        $ flask -a app.py db init
-        $ flask -a app.py db create
+        $ flask db init
+        $ flask db create
 
 You can find the database in `examples/app.db`.
 
@@ -51,13 +52,13 @@ invenio_records/data/marc21/bibliographic.xml):
         $ wget "https://github.com/inveniosoftware/invenio-records/raw/\
             master/invenio_records/data/marc21/bibliographic.xml"
         $ dojson -i bibliographic.xml -l marcxml do marc21 | \
-            flask -a app.py records create --pid-minter recid
+            flask records create --pid-minter recid
 
 4. Download javascript and css libraries:
 
     .. code-block:: console
 
-        flask -a app.py npm
+        flask npm
         cd static
         npm install
         cd ..
@@ -67,15 +68,15 @@ invenio_records/data/marc21/bibliographic.xml):
 
     .. code-block:: console
 
-        flask -a app.py collect -v
-        flask -a app.py assets build
+        flask collect -v
+        flask assets build
 
 
 6. Run the development server:
 
     .. code-block:: console
 
-        flask -a app.py run -h 0.0.0.0 -p 5000
+        flask run -h 0.0.0.0 -p 5000
 
 
 7. Open in a browser the page `http://0.0.0.0:5000/example/[:pid]`.
@@ -90,7 +91,6 @@ import os
 
 from flask import Flask, render_template
 from flask_babelex import Babel
-from flask_cli import FlaskCLI
 from invenio_assets import InvenioAssets, NpmBundle
 from invenio_db import InvenioDB, db
 from invenio_pidstore import InvenioPIDStore
@@ -111,7 +111,9 @@ app.config.update(
                                       'sqlite:///app.db'),
 )
 Babel(app)
-FlaskCLI(app)
+if not hasattr(app, 'cli'):
+    from flask_cli import FlaskCLI
+    FlaskCLI(app)
 InvenioDB(app)
 InvenioTheme(app)
 assets = InvenioAssets(app)

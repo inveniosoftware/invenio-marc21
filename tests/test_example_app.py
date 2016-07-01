@@ -43,7 +43,7 @@ def setup_module():
 
 def teardown_module():
     """Tear down after all tests."""
-    for cmd in ['flask -a app.py db destroy --yes-i-know',
+    for cmd in ['FLASK_APP=app.py flask db destroy --yes-i-know',
                 'rm -rf instance']:
         exit_status = subprocess.call(cmd, shell=True)
         assert exit_status == 0
@@ -56,30 +56,30 @@ def test_example_app():
     # Testing database creation
     for cmd in ['mkdir -p instance',
                 'pip install -r requirements.txt',
-                'flask -a app.py db init',
-                'flask -a app.py db create']:
+                'FLASK_APP=app.py flask db init',
+                'FLASK_APP=app.py flask db create']:
         exit_status = subprocess.call(cmd, shell=True)
         assert exit_status == 0
 
     # Testing record creation
-    cmd = """dojson -i {0} -l marcxml do marc21 | \
-             flask -a app.py records create --pid-minter recid""".format(
+    cmd = """dojson -i {0} -l marcxml do marc21 | FLASK_APP=app.py \
+             flask records create --pid-minter recid""".format(
         source
     )
     exit_status = subprocess.call(cmd, shell=True)
     assert exit_status == 0
 
     # Download javascript and css libraries
-    for cmd in ['flask -a app.py npm',
+    for cmd in ['FLASK_APP=app.py flask npm',
                 'cd static && npm install && cd ..',
                 'npm install -g node-sass clean-css requirejs uglify-js',
-                'flask -a app.py collect -v',
-                'flask -a app.py assets build']:
+                'FLASK_APP=app.py flask collect -v',
+                'FLASK_APP=app.py flask assets build']:
         exit_status = subprocess.call(cmd, shell=True)
         assert exit_status == 0
 
     # Starting example web app
-    cmd = 'flask -a app.py run'
+    cmd = 'FLASK_APP=app.py flask run'
     webapp = subprocess.Popen(cmd, stdout=subprocess.PIPE,
                               preexec_fn=os.setsid, shell=True)
     time.sleep(5)
