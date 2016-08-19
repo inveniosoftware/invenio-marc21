@@ -12,26 +12,26 @@ msgstr ""
 "POT-Creation-Date: 2016-08-19 11:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Alizee Pace <alizee.pace@gmail.com>, 2016\n"
-"Language-Team: French (https://www.transifex.com/inveniosoftware/teams/23537/fr/)\n"
+"Language-Team: Italian (https://www.transifex.com/inveniosoftware/teams/23537/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: invenio_marc21/templates/invenio_marc21/detail.html:33
 msgid "No title"
-msgstr "Sans titre"
+msgstr "Senza titolo"
 
 #: invenio_marc21/templates/invenio_marc21/detail.html:57
 msgid "Control number"
-msgstr "Numéro de contrôle"
+msgstr "Numero di controllo"
 
 #: invenio_marc21/templates/invenio_marc21/detail.html:63
 msgid "Publication date"
-msgstr "Date de publication"
+msgstr "Data di pubblicazione"
 
 #: invenio_marc21/templates/invenio_marc21/detail.html:69
 msgid "Schema"
-msgstr "Schéma"
+msgstr "Schema"
