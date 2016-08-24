@@ -82,7 +82,7 @@ def test_example_app():
     cmd = 'FLASK_APP=app.py flask run'
     webapp = subprocess.Popen(cmd, stdout=subprocess.PIPE,
                               preexec_fn=os.setsid, shell=True)
-    time.sleep(5)
+    time.sleep(10)
 
     # Testing record retrieval via web
     cmd = 'curl http://127.0.0.1:5000/example/1'

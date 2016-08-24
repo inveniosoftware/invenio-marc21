@@ -41,7 +41,15 @@ class MARCXMLSerializer(DoJSONSerializer):
 
     def __init__(self, dojson_model, xslt_filename=None, schema_class=None,
                  replace_refs=False):
-        """."""
+        """Initialize serializer.
+
+        :param dojson_model: The DoJSON model able to convert JSON through the
+            ``do()`` function.
+        :param xslt_filename: XSLT filename. (Default: ``None``)
+        :param schema_class: The schema class. (Default: ``None``)
+        :param replace_refs: Boolean value to configure if replace the ``$ref``
+            keys within the JSON. (Default: ``False``)
+        """
         self.dumps_kwargs = dict(xslt_filename=xslt_filename) if \
             xslt_filename else {}
 
@@ -50,7 +58,11 @@ class MARCXMLSerializer(DoJSONSerializer):
             dojson_model, replace_refs=replace_refs)
 
     def dump(self, obj):
-        """Dump object."""
+        """Serialize object with schema.
+
+        :param obj: The object to serialize.
+        :returns: The object serialized.
+        """
         if self.schema_class:
             obj = self.schema_class().dump(obj).data
         return super(MARCXMLSerializer, self).dump(obj)
@@ -58,10 +70,12 @@ class MARCXMLSerializer(DoJSONSerializer):
     def serialize(self, pid, record, links_factory=None):
         """Serialize a single record and persistent identifier.
 
-        :param pid: Persistent identifier instance.
-        :param record: Record instance.
+        :param pid: The :class:`invenio_pidstore.models.PersistentIdentifier`
+            instance.
+        :param record: The :class:`invenio_records.api.Record` instance.
         :param links_factory: Factory function for the link generation,
-                              which are added to the response.
+            which are added to the response.
+        :returns: The object serialized.
         """
         return dumps(self.transform_record(pid, record, links_factory),
                      **self.dumps_kwargs)
@@ -73,7 +87,8 @@ class MARCXMLSerializer(DoJSONSerializer):
         :param pid_fetcher: Persistent identifier fetcher.
         :param search_result: Elasticsearch search result.
         :param item_links_factory: Factory function for the items in result.
-
+            (Default: ``None``)
+        :returns: The objects serialized.
         """
         ret = [self.transform_search_hit(pid_fetcher(hit['_id'],
                                          hit['_source']),
@@ -84,7 +99,13 @@ class MARCXMLSerializer(DoJSONSerializer):
         return dumps(ret, **self.dumps_kwargs)
 
     def serialize_oaipmh(self, pid, record):
-        """Serialize a single record for OAI-PMH."""
+        """Serialize a single record for OAI-PMH.
+
+        :param pid: The :class:`invenio_pidstore.models.PersistentIdentifier`
+            instance.
+        :param record: The :class:`invenio_records.api.Record` instance.
+        :returns: The object serialized.
+        """
         obj = self.transform_record(pid, record['_source']) \
             if isinstance(record['_source'], Record) \
             else self.transform_search_hit(pid, record)

@@ -34,18 +34,27 @@ class InvenioMARC21(object):
     """Invenio-MARC21 extension."""
 
     def __init__(self, app=None):
-        """Extension initialization."""
+        """Extension initialization.
+
+        :param app: An instance of :class:`flask.Flask`.
+        """
         if app:
             self.init_app(app)
 
     def init_app(self, app):
-        """Flask application initialization."""
+        """Flask application initialization.
+
+        :param app: An instance of :class:`flask.Flask`.
+        """
         self.init_config(app)
         app.register_blueprint(blueprint)
         app.extensions['invenio-marc21'] = self
 
     def init_config(self, app):
-        """Initialize configuration."""
+        """Initialize configuration.
+
+        :param app: An instance of :class:`flask.Flask`.
+        """
         app.config.setdefault(
             'MARC21_BASE_TEMPLATE',
             app.config.get('BASE_TEMPLATE',
