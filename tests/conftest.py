@@ -57,11 +57,11 @@ def es_app(request):
     """Flask application with records fixture."""
     app = Flask(__name__)
     app.config.update(
+        JSONSCHEMAS_ENDPOINT='/',
         JSONSCHEMAS_HOST='http://localhost:5000',
         SQLALCHEMY_DATABASE_URI=os.environ.get(
             'SQLALCHEMY_DATABASE_URI', 'sqlite:///test.db'),
     )
-    app.config[InvenioJSONSchemas.CONFIG_ENDPOINT] = '/'
 
     Babel(app)
     if not hasattr(app, 'cli'):
