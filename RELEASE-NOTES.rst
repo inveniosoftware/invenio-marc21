@@ -24,7 +24,7 @@ Installation
 Documentation
 -------------
 
-   http://pythonhosted.org/invenio-marc21/
+   http://invenio-marc21.readthedocs.io/
 
 Happy hacking and thanks for flying Invenio-MARC21.
 

@@ -46,4 +46,4 @@ Invenio module with nice defaults for MARC21 overlay.
 *This is an experimental developer preview release.*
 
 * Free software: GPLv2 license
-* Documentation: https://pythonhosted.org/invenio-marc21/
+* Documentation: https://invenio-marc21.readthedocs.io/
