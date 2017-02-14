@@ -36,6 +36,7 @@ tests_require = [
     'check-manifest>=0.25',
     'coverage>=4.0',
     'invenio-db>=1.0.0a9',
+    'invenio-i18n>=1.0.0b2',
     'invenio-indexer>=1.0.0a1',
     'invenio-pidstore>=1.0.0a7',
     'invenio-records>=1.0.0a12',
@@ -51,7 +52,7 @@ tests_require = [
 
 extras_require = {
     'docs': [
-        'Sphinx>=1.4.2',
+        'Sphinx>=1.5.2',
     ],
     'tests': tests_require,
 }
@@ -70,7 +71,7 @@ install_requires = [
     'Flask-BabelEx>=0.9.2',
     'dojson>=1.3.0',
     'invenio-jsonschemas>=1.0.0a2',
-    'invenio-records-rest>=1.0.0a9',
+    'invenio-records-rest>=1.0.0a17',
     'invenio-records-ui>=1.0.0a6',
 ]
 

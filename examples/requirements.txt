@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of Invenio.
-# Copyright (C) 2016 CERN.
+# Copyright (C) 2016, 2017 CERN.
 #
 # Invenio is free software; you can redistribute it
 # and/or modify it under the terms of the GNU General Public License as
@@ -23,6 +23,7 @@
 # as an Intergovernmental Organization or submit itself to any jurisdiction.
 
 -e ..[all]
-invenio-assets>=1.0.0a4,<1.1
-invenio-pidstore>=1.0.0a7,<1.1
-invenio-theme>=1.0.0a9,<1.1
+invenio-assets>=1.0.0b6,<1.1
+invenio-i18n>=1.0.0b2,<1.1
+invenio-pidstore>=1.0.0b1,<1.1
+invenio-theme>=1.0.0a17,<1.1

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of Invenio.
-# Copyright (C) 2016 CERN.
+# Copyright (C) 2016, 2017 CERN.
 #
 # Invenio is free software; you can redistribute it
 # and/or modify it under the terms of the GNU General Public License as
@@ -72,7 +72,8 @@ def test_example_app():
     # Download javascript and css libraries
     for cmd in ['FLASK_APP=app.py flask npm',
                 'cd static && npm install && cd ..',
-                'npm install -g node-sass clean-css requirejs uglify-js',
+                'npm install -g node-sass@3.8.0 clean-css@3.4.12'
+                ' requirejs uglify-js',
                 'FLASK_APP=app.py flask collect -v',
                 'FLASK_APP=app.py flask assets build']:
         exit_status = subprocess.call(cmd, shell=True)

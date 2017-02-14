@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of Invenio.
-# Copyright (C) 2016 CERN.
+# Copyright (C) 2016, 2017 CERN.
 #
 # Invenio is free software; you can redistribute it
 # and/or modify it under the terms of the GNU General Public License as
@@ -62,7 +62,8 @@ invenio_records/data/marc21/bibliographic.xml):
         cd static
         npm install
         cd ..
-        npm install -g node-sass clean-css requirejs uglify-js
+        npm install -g node-sass@@3.8.0 clean-css@3.4.12 \
+                       requirejs uglify-js
 
 5. Collect static files and build bundles
 
@@ -92,9 +93,9 @@ import os
 from flask import Flask, render_template
 from flask_babelex import Babel
 from invenio_assets import InvenioAssets, NpmBundle
-from invenio_db import InvenioDB, db
+from invenio_db import InvenioDB
+from invenio_i18n import InvenioI18N
 from invenio_pidstore import InvenioPIDStore
-from invenio_pidstore.minters import recid_minter
 from invenio_pidstore.models import PersistentIdentifier
 from invenio_records import InvenioRecords
 from invenio_records.models import RecordMetadata
@@ -115,6 +116,7 @@ if not hasattr(app, 'cli'):
     from flask_cli import FlaskCLI
     FlaskCLI(app)
 InvenioDB(app)
+InvenioI18N(app)
 InvenioTheme(app)
 assets = InvenioAssets(app)
 InvenioRecords(app)
