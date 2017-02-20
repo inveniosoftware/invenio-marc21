@@ -35,7 +35,6 @@ from flask import Flask
 from invenio_db import db
 from invenio_indexer.api import RecordIndexer
 from invenio_records import Record
-from invenio_search import current_search as search
 
 from invenio_marc21 import InvenioMARC21
 
@@ -84,10 +83,11 @@ def load_records(es_app, filename, schema):
         for record in records:
             es_records.append(indexer.index(record))
 
+        from invenio_search import current_search
         for record in es_records:
-            search.client.get(index=record['_index'],
-                              doc_type=record['_type'],
-                              id=record['_id'])
+            current_search.client.get(index=record['_index'],
+                                      doc_type=record['_type'],
+                                      id=record['_id'])
 
 
 def test_authority_data(es_app, request):
