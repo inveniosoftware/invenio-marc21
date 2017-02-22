@@ -1,8 +1,8 @@
 =========================
- Invenio-MARC21 v1.0.0a3
+ Invenio-MARC21 v1.0.0a4
 =========================
 
-Invenio-MARC21 v1.0.0a3 was released on July 1, 2016.
+Invenio-MARC21 v1.0.0a4 was released on February 22, 2017.
 
 About
 -----
@@ -19,7 +19,7 @@ What's new
 Installation
 ------------
 
-   $ pip install invenio-marc21==1.0.0a3
+   $ pip install invenio-marc21==1.0.0a4
 
 Documentation
 -------------
