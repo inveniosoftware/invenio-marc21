@@ -27,7 +27,10 @@
 import copy
 
 from invenio_records_rest.config import RECORDS_REST_ENDPOINTS
-
+from invenio_records_ui.config import RECORDS_UI_ENDPOINTS
 
 MARC21_REST_ENDPOINTS = copy.deepcopy(RECORDS_REST_ENDPOINTS)
 MARC21_REST_ENDPOINTS['recid']['search_index'] = 'marc21'
+
+MARC21_UI_ENDPOINTS = copy.deepcopy(RECORDS_UI_ENDPOINTS)
+MARC21_UI_ENDPOINTS['recid']['template'] = 'invenio_marc21/detail.html'

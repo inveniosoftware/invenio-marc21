@@ -72,7 +72,7 @@ install_requires = [
     'dojson>=1.3.0',
     'invenio-jsonschemas>=1.0.0a2',
     'invenio-records-rest>=1.0.0a17',
-    'invenio-records-ui>=1.0.0a6',
+    'invenio-records-ui>=1.0.0a8',
 ]
 
 packages = find_packages()
