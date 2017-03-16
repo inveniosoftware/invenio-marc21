@@ -83,6 +83,20 @@ def test_serialize_search():
     assert data.decode('utf8') == expected
 
 
+def test_serialize_no_schema_class():
+    """Test MARCXML serialization without providing record schema."""
+    s = MARCXMLSerializer(to_marc21)
+    rec = Record({'__order__': ['control_number_identifier'],
+                  'control_number_identifier': 'SzGeCERN'})
+    data = s.serialize(PersistentIdentifier(pid_type='recid', pid_value='1'),
+                       rec)
+    expected = u'<?xml version=\'1.0\' encoding=\'UTF-8\'?>\n' \
+               u'<record xmlns="http://www.loc.gov/MARC21/slim">\n' \
+               u'  <controlfield tag="003">SzGeCERN</controlfield>\n' \
+               u'</record>\n'
+    assert data.decode('utf8') == expected
+
+
 def test_serialize_oaipmh():
     """Test MARCXML serialize."""
     s = MARCXMLSerializer(to_marc21, schema_class=MySchema)

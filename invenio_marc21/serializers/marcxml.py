@@ -65,6 +65,8 @@ class MARCXMLSerializer(DoJSONSerializer):
         """
         if self.schema_class:
             obj = self.schema_class().dump(obj).data
+        else:
+            obj = obj['metadata']
         return super(MARCXMLSerializer, self).dump(obj)
 
     def serialize(self, pid, record, links_factory=None):
