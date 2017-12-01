@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of Invenio.
-# Copyright (C) 2016 CERN.
+# Copyright (C) 2017 CERN.
 #
 # Invenio is free software; you can redistribute it
 # and/or modify it under the terms of the GNU General Public License as
@@ -22,8 +22,4 @@
 # waive the privileges and immunities granted to it by virtue of its status
 # as an Intergovernmental Organization or submit itself to any jurisdiction.
 
--e git+git://github.com/inveniosoftware/dojson.git#egg=dojson
--e git+git://github.com/inveniosoftware/invenio-jsonschemas.git#egg=invenio-jsonschemas
--e git+git://github.com/inveniosoftware/invenio-records-rest.git#egg=invenio-records-rest
--e git+git://github.com/inveniosoftware/invenio-records-ui.git#egg=invenio-records-ui
--e git+git://github.com/inveniosoftware/invenio-search.git#egg=invenio-search
+"""Invenio module with nice defaults for MARC21 overlay."""

@@ -36,11 +36,10 @@ tests_require = [
     'check-manifest>=0.25',
     'coverage>=4.0',
     'invenio-db>=1.0.0a9',
-    'invenio-i18n>=1.0.0b2',
+    'invenio-i18n>=1.0.0b4',
     'invenio-indexer>=1.0.0a1',
     'invenio-pidstore>=1.0.0a7',
     'invenio-records>=1.0.0a12',
-    'invenio-search>=1.0.0a7',
     'isort>=4.2.2',
     'mock>=1.3.0',
     'pydocstyle>=1.0.0',
@@ -50,15 +49,27 @@ tests_require = [
     'pytest>=2.8.0',
 ]
 
+invenio_search_version = '1.0.0b3'
+
 extras_require = {
     'docs': [
         'Sphinx>=1.5.2',
+    ],
+    # Elasticsearch version
+    'elasticsearch2': [
+        'invenio-search[elasticsearch2]>={}'.format(invenio_search_version),
+    ],
+    'elasticsearch5': [
+        'invenio-search[elasticsearch5]>={}'.format(invenio_search_version),
     ],
     'tests': tests_require,
 }
 
 extras_require['all'] = []
-for reqs in extras_require.values():
+for name, reqs in extras_require.items():
+    if name[0] == ':' or name in (
+            'elasticsearch2', 'elasticsearch5', 'elasticsearch6'):
+        continue
     extras_require['all'].extend(reqs)
 
 setup_requires = [
@@ -68,11 +79,11 @@ setup_requires = [
 
 install_requires = [
     'Flask>=0.11.1',
-    'Flask-BabelEx>=0.9.2',
+    'Flask-BabelEx>=0.9.3',
     'dojson>=1.3.0',
-    'invenio-jsonschemas>=1.0.0a2',
-    'invenio-records-rest>=1.0.0a17',
-    'invenio-records-ui>=1.0.0a8',
+    'invenio-jsonschemas>=1.0.0a7',
+    'invenio-records-rest>=1.0.0b4',
+    'invenio-records-ui>=1.0.0b1',
 ]
 
 packages = find_packages()
