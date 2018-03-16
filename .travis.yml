@@ -34,6 +34,12 @@ python:
   - "2.7"
   - "3.5"
 
+matrix:
+  fast_finish: true
+  allow_failures:
+    - env: REQUIREMENTS=devel EXTRAS=all,elasticsearch2 ES_URL=$ES2_DOWNLOAD_URL
+    - env: REQUIREMENTS=devel EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL
+
 before_install:
   - "nvm install 6; nvm use 6"
   - "mkdir /tmp/elasticsearch"
