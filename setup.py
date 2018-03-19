@@ -45,6 +45,9 @@ extras_require = {
     'elasticsearch5': [
         'invenio-search[elasticsearch5]>={}'.format(invenio_search_version),
     ],
+    'elasticsearch6': [
+        'invenio-search[elasticsearch6]>={}'.format(invenio_search_version),
+    ],
     'tests': tests_require,
 }
 

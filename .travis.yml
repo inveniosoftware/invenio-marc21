@@ -20,15 +20,15 @@ env:
   global:
     - ES2_DOWNLOAD_URL="https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.4.2/elasticsearch-2.4.2.tar.gz"
     - ES5_DOWNLOAD_URL="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.4.tar.gz"
+    - ES6_DOWNLOAD_URL="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.2.tar.gz"
     - ES_HOST=127.0.0.1
   matrix:
     - REQUIREMENTS=lowest EXTRAS=all,elasticsearch2 ES_URL=$ES2_DOWNLOAD_URL
     # TODO: Add when `invenio-search v1.0.0b3` starts being propagated as a minimum requirement
     # - REQUIREMENTS=lowest EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL
-    - REQUIREMENTS=release EXTRAS=all,elasticsearch2 ES_URL=$ES2_DOWNLOAD_URL DEPLOY=ture
     - REQUIREMENTS=release EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL
-    - REQUIREMENTS=devel EXTRAS=all,elasticsearch2 ES_URL=$ES2_DOWNLOAD_URL
-    - REQUIREMENTS=devel EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL
+    - REQUIREMENTS=release EXTRAS=all,elasticsearch6 ES_URL=$ES6_DOWNLOAD_URL
+    - REQUIREMENTS=devel EXTRAS=all,elasticsearch6 ES_URL=$ES6_DOWNLOAD_URL
 
 python:
   - "2.7"
