@@ -26,7 +26,7 @@ env:
     - REQUIREMENTS=lowest EXTRAS=all,elasticsearch2 ES_URL=$ES2_DOWNLOAD_URL
     # TODO: Add when `invenio-search v1.0.0b3` starts being propagated as a minimum requirement
     # - REQUIREMENTS=lowest EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL
-    - REQUIREMENTS=release EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL
+    - REQUIREMENTS=release EXTRAS=all,elasticsearch5 ES_URL=$ES5_DOWNLOAD_URL DEPLOY=true
     - REQUIREMENTS=release EXTRAS=all,elasticsearch6 ES_URL=$ES6_DOWNLOAD_URL
     - REQUIREMENTS=devel EXTRAS=all,elasticsearch6 ES_URL=$ES6_DOWNLOAD_URL
 
