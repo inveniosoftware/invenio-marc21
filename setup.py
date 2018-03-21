@@ -19,11 +19,11 @@ history = open('CHANGES.rst').read()
 tests_require = [
     'check-manifest>=0.25',
     'coverage>=4.0',
-    'invenio-db>=1.0.0a9',
-    'invenio-i18n>=1.0.0b4',
-    'invenio-indexer>=1.0.0a1',
-    'invenio-pidstore>=1.0.0a7',
-    'invenio-records>=1.0.0a12',
+    'invenio-db>=1.0.0',
+    'invenio-i18n>=1.0.0',
+    'invenio-indexer>=1.0.0',
+    'invenio-pidstore>=1.0.0',
+    'invenio-records>=1.0.0',
     'isort>=4.2.2',
     'mock>=1.3.0',
     'pydocstyle>=1.0.0',
@@ -32,7 +32,7 @@ tests_require = [
     'pytest>=2.8.0',
 ]
 
-invenio_search_version = '1.0.0b3'
+invenio_search_version = '1.0.0'
 
 extras_require = {
     'docs': [
@@ -67,9 +67,9 @@ install_requires = [
     'Flask>=0.11.1',
     'Flask-BabelEx>=0.9.3',
     'dojson>=1.3.0',
-    'invenio-jsonschemas>=1.0.0a7',
-    'invenio-records-rest>=1.0.0b4',
-    'invenio-records-ui>=1.0.0b1',
+    'invenio-jsonschemas>=1.0.0',
+    'invenio-records-rest>=1.0.0',
+    'invenio-records-ui>=1.0.0',
 ]
 
 packages = find_packages()
@@ -126,6 +126,6 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: Implementation :: CPython',
-        'Development Status :: 1 - Planning',
+        'Development Status :: 5 - Production/Stable',
     ],
 )
