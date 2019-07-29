@@ -1,6 +1,6 @@
 {
   "settings": {
-    "index.percolator.map_unmapped_fields_as_string": true,
+    "index.percolator.map_unmapped_fields_as_text": true,
     "index.mapping.total_fields.limit": 3000
   },
   "mappings": {

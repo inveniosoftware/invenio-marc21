@@ -1,6 +1,6 @@
 {
   "settings": {
-    "index.percolator.map_unmapped_fields_as_string": true
+    "index.percolator.map_unmapped_fields_as_text": true
   },
   "mappings": {
     "numeric_detection": true,
